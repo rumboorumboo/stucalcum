@@ -140,11 +140,11 @@ func main() {
 		if (erA != nil) || (erB != nil) {
 			panicMsg()
 		}
-		if (arabA >= 0 && arabA <= 10) && (arabB >= 0 && arabB <= 10) {
+		if (arabA >= 1 && arabA <= 10) && (arabB >= 1 && arabB <= 10) {
 			answer = calculate(operator, arabA, arabB, "null")
 
 		} else {
-			panic("Данные на вход от 0 до 10 включительно")
+			panic("Данные на вход от 1 до 10 включительно")
 		}
 
 	}
